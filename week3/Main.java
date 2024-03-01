@@ -1,8 +1,11 @@
 package week3;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        PersegiPanjang[] data = new PersegiPanjang[5];
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        PersegiPanjang[] data = new PersegiPanjang[n];
         //data[0] = new PersegiPanjang();
         data[0].height =50;
 
@@ -14,6 +17,10 @@ public class Main {
         System.out.println("Area = "+data[1].calcArea());
         System.out.println("Area = "+data[0].calcArea());
 
+        for(PersegiPanjang p:data){
+
+        }
+
         PersegiPanjang p1 = new PersegiPanjang(10, 10);
         data[2] = p1;
         System.out.println("Area = "+p1.calcArea());
@@ -24,6 +31,9 @@ public class Main {
             data[i] = new PersegiPanjang(15*i, 4*i);
             System.out.println("Area = "+data[i].calcArea());
         }
+
+        PersegiPanjang[][] data = new PersegiPanjang[2][3];
+        data[0][0] = new PersegiPanjang();
 
     }
 }
