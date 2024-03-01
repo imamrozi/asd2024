@@ -11,5 +11,16 @@ public class MainMahasiswa {
         }
         double rata2 = sum/mhs.length;
         System.out.println("IPK rata2 = "+rata2);
+
+        double maxIPK = mhs[0].IPK;
+        int idx = 0;
+        for(int i=0;i<mhs.length;i++){
+            if(mhs[i].IPK>maxIPK){
+                maxIPK = mhs[i].IPK;
+                idx = i;
+            }
+        }
+        System.out.println("Mahasiswa dengan IPK tertinggi");
+        mhs[idx].print();
     }
 }
