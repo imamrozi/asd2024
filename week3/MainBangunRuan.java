@@ -24,5 +24,34 @@ public class MainBangunRuan {
             System.out.println("Vol limas ke-"+i+"="+lim[i].hitungVolume());
             System.out.println("Luas limas ke-"+i+"="+lim[i].hitungLuasPermukaan());
         }
+        //volume kerucut terbesar
+        double maxVol = krc[0].hitungVolume();
+        int maxVolIdx = 0;
+        for(int i=1;i<3;i++){
+            if(krc[i].hitungVolume()>maxVol){
+                maxVol = krc[i].hitungVolume();
+                maxVolIdx = i;
+            }
+        }
+        System.out.println("Max volume = "+maxVol);
+        System.out.println("Jari-jari = "+krc[maxVolIdx].jariJari);
+        System.out.println("Sisi miring = "+krc[maxVolIdx].sisiMiring);
+        //volume terbesar melalui method
+        maxVol(krc);
     }
-}
+
+    static void maxVol(Kerucut[] x){
+        //volume kerucut terbesar
+        double maxVol = x[0].hitungVolume();
+        int maxVolIdx = 0;
+        for(int i=1;i<3;i++){
+            if(x[i].hitungVolume()>maxVol){
+                maxVol = x[i].hitungVolume();
+                maxVolIdx = i;
+            }
+        }
+        System.out.println("Max volume = "+maxVol);
+        System.out.println("Jari-jari = "+x[maxVolIdx].jariJari);
+        System.out.println("Sisi miring = "+x[maxVolIdx].sisiMiring);
+    }
+}    
