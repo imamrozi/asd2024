@@ -13,7 +13,7 @@ public class MainStudent {
             /*System.out.println("Nim = "+std.nim);
             System.out.println("Nama = "+std.name);
             System.out.println("GPA = "+std.gpa);*/
-            //std.printData();
+            std.printData();
         }
         
         //find max GPA
