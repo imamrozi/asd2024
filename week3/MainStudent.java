@@ -13,19 +13,28 @@ public class MainStudent {
             /*System.out.println("Nim = "+std.nim);
             System.out.println("Nama = "+std.name);
             System.out.println("GPA = "+std.gpa);*/
-            std.printData();
+            //std.printData();
         }
         
         //find max GPA
-        /*double maxGPA = sData[0].gpa;
+        double maxGPA = sData[0].gpa;
+        int idx = 0;
+        //String nimMax=sData[0].nim, nameMax=sData[0].name;
         for(int i=1;i<sData.length;i++){
             if(sData[i].gpa>maxGPA){
                 maxGPA = sData[i].gpa;
+                idx = i;
+                //nimMax = sData[i].nim;
+                //nameMax = sData[i].name;
             }
         }
-        System.out.println("Max GPA = "+maxGPA);*/
+        System.out.println("Max GPA = "+maxGPA);
+        System.out.println("Nim = "+sData[idx].nim);
+        System.out.println("Name = "+sData[idx].name);
+        //System.out.println("Nim = "+nimMax);
+        //System.out.println("Name = "+nameMax);
 
-        findMaxGPA(sData);
+        //findMaxGPA(sData);
     }
     static void findMaxGPA(Student[] param){
         //find max GPA
