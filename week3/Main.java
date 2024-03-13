@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         PersegiPanjang[] data = new PersegiPanjang[n];
-        //data[0] = new PersegiPanjang();
+        data[0] = new PersegiPanjang();
         data[0].height =50;
 
         data[0] = new PersegiPanjang();
@@ -31,9 +31,5 @@ public class Main {
             data[i] = new PersegiPanjang(15*i, 4*i);
             System.out.println("Area = "+data[i].calcArea());
         }
-
-        PersegiPanjang[][] data = new PersegiPanjang[2][3];
-        data[0][0] = new PersegiPanjang();
-
     }
 }
