@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         PersegiPanjang[] data = new PersegiPanjang[n];
         data[0] = new PersegiPanjang();
@@ -31,5 +31,11 @@ public class Main {
             data[i] = new PersegiPanjang(15*i, 4*i);
             System.out.println("Area = "+data[i].calcArea());
         }
+
+        if(5<10){
+
+        }*/
+               System.out.println("bbbb".compareTo("bbbb"));
+        
     }
 }
