@@ -41,6 +41,7 @@ public class QueueNasabah {
         else{
             int i=front;
             while(i!=rear){
+                //System.out.print(""+data[i].nama+", ");
                 data[i].print();
                 i=(i+1)%max;
             }
