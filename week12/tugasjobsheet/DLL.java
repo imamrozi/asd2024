@@ -61,4 +61,17 @@ public class DLL {
         book = tmp.data;
         return book;
     }
+    Book search(String title){
+        Book book = null;
+        Node tmp = head;
+        while(tmp!=null){
+            if(tmp.data.title.equals(title)){
+                book = tmp.data;
+                break;
+            }else{
+                tmp = tmp.next;
+            }
+        }
+        return book;
+    }
 }

@@ -8,6 +8,7 @@ public class Main {
         list.addLast(new Book("P03", "Matematika", 1995));
         list.print();
         list.peek().print();
+        list.search("MySQL").print();
         //list.removeLast();
         //list.print();
     }
